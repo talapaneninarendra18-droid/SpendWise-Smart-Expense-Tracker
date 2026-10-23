@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>SpendWise-Smart Expense Tracker</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="data:,">
+    </head>
+  <body>
+   <!--Header Section-->
+   <header>
+        <h1>SpendWise-Smart Expense Tracker</h1>
+        <p>Track You'r Money.Manage You'r Future.</p>
+    </header>
+
+    <!--main section-->
+    <main>
+        <section class="summary">
+            <div class="card">
+                <h3>Total Income</h3>
+                <p id="income">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Expenses</h3>
+                <p id="expenses">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Balance</h3>
+                <p id="balance">0</p>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Add Transactions</h2>
+            <input type="number" id="amount" placeholder="amount " min="0.01" max="0.01" required>
+
+            <form id="transaction-form">
+                <input type="text" id="title" placeholder="Transaction-name" required>
+
+                <select id="type">
+                    <option value="income">Income</option>
+                    <option value="expenses">Expenses</option>
+                    </select>
+                </section>
+
+                <button type="submit">add Transaction</button>
+            </form>
+        </section> 
+
+        <section>
+            <h2>Transaction</h2>
+            <ul id="Transactions-list"></ul>
+        </section>
+    </main>
+
+<script src="script.js"></script>
+</body>
+</html>
